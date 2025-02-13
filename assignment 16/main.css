@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+.assign-1{
+  background-color: #ff5722;
+  width: 150px;
+  color: white;
+  padding: 20px;
+  margin: 40px auto;
+  text-align: center;
+  position: relative;
+}
+.assign-1::before,
+.assign-1::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ff5722;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.assign-1::before{
+  transform: skew(10deg, 10deg);
+}
+.assign-1::after{
+  transform: skew(-10deg, -10deg);
+}
